@@ -12,6 +12,9 @@
     <OutputPath>.</OutputPath>
     <Name>RogueLikeTutorials</Name>
     <RootNamespace>RogueLikeTutorials</RootNamespace>
+    <InterpreterId>{b32d2c4d-2c46-417b-b479-851b2e5096f4}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +26,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="engine.py" />
+    <Compile Include="libtcodpy\cprotos.py" />
+    <Compile Include="libtcodpy\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libtcodpy\" />
+    <Folder Include="libtcodpy\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libtcodpy\__pycache__\__init__.cpython-36.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{b32d2c4d-2c46-417b-b479-851b2e5096f4}\3.5" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
